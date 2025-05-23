@@ -2,8 +2,7 @@ import { v2 as cloudinary } from 'cloudinary';
 import { CloudinaryStorage } from 'multer-storage-cloudinary';
 import { configDotenv } from 'dotenv';
 configDotenv();
-console.log(process.env.CLOUD_KEY);
-console.log(process.env.CLOUD_NAME);
+
 cloudinary.config({
   cloud_name: process.env.CLOUD_NAME,
   api_key: process.env.CLOUD_KEY,
